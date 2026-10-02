@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swapan Mallick — Research Scientist working on data assimilation, numerical weather prediction, satellite observations and AI for weather and climate applications.">
+  <meta name="theme-color" content="#07140f">
+  <title>Swapan Mallick — Research Scientist</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Home">SM<span>.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">Menu</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow reveal">Senior Research Scientist · SMHI, Sweden</div>
+      <h1 class="hero-title reveal">
+        Observations in.<br>
+        <span>Better atmospheric analyses out.</span>
+      </h1>
+      <p class="hero-copy reveal">
+        I’m <strong>Swapan Mallick</strong>. I work at the intersection of
+        <strong>data assimilation</strong>, <strong>numerical weather prediction</strong>,
+        <strong>satellite remote sensing</strong> and <strong>artificial intelligence</strong>
+        to improve high-resolution weather analysis and forecasting.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="button button-primary" href="#projects">Explore my work</a>
+        <a class="button button-ghost" href="assets/Swapan_Mallick_CV.pdf">Download CV</a>
+      </div>
+      <div class="status-line reveal">
+        <span class="status-dot"></span>
+        <span>Current focus: regional reanalysis · satellite DA · generative AI</span>
+      </div>
+      <div class="code-card reveal" aria-label="Research workflow">
+        <div class="code-top">
+          <span>workflow / atmospheric_da.py</span>
+          <span>active</span>
+        </div>
+        <pre><code><span class="code-muted">$</span> python atmospheric_da.py
+<span class="code-key">background</span>  = NWP_model_state
+<span class="code-key">observations</span> = satellite + conventional
+<span class="code-key">analysis</span>    = assimilate(background, observations)
+<span class="code-ok">✓ physically consistent analysis generated</span></code></pre>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>DATA ASSIMILATION</span><i>✦</i><span>HARMONIE-AROME</span><i>✦</i><span>RTTOV</span><i>✦</i><span>SATELLITE RADIANCES</span><i>✦</i><span>CARRA-2</span><i>✦</i><span>DEODE</span><i>✦</i><span>DIFFUSION MODELS</span><i>✦</i><span>WEATHERGENERATOR</span><i>✦</i><span>PYTORCH</span><i>✦</i><span>HPC</span><i>✦</i>
+        <span>DATA ASSIMILATION</span><i>✦</i><span>HARMONIE-AROME</span><i>✦</i><span>RTTOV</span><i>✦</i><span>SATELLITE RADIANCES</span><i>✦</i><span>CARRA-2</span><i>✦</i><span>DEODE</span><i>✦</i><span>DIFFUSION MODELS</span><i>✦</i><span>WEATHERGENERATOR</span><i>✦</i><span>PYTORCH</span><i>✦</i><span>HPC</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="section split" id="about">
+      <div>
+        <div class="section-kicker reveal">01 / About</div>
+        <h2 class="section-title reveal">Weather science, observations and AI.</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p>
+          I am a Senior Research Scientist at the Swedish Meteorological and Hydrological Institute (SMHI),
+          working on numerical weather prediction and data assimilation. My research combines
+          atmospheric models, satellite observations, radiative transfer modelling and machine learning.
+        </p>
+        <p>
+          My work spans variational and ensemble data assimilation, observation processing,
+          background-error modelling, microwave and infrared radiance assimilation, regional
+          reanalysis, and generative AI methods for weather applications.
+        </p>
+        <div class="fact-grid">
+          <div><span>Role</span><strong>Senior Research Scientist</strong></div>
+          <div><span>Organisation</span><strong>SMHI</strong></div>
+          <div><span>Field</span><strong>NWP & Data Assimilation</strong></div>
+          <div><span>Research</span><strong>Satellite DA · AI/ML</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-kicker reveal">02 / Research</div>
+      <h2 class="section-title reveal">Methods and tools I work with.</h2>
+      <div class="research-grid">
+        <article class="research-card reveal">
+          <span class="card-no">01</span>
+          <h3>Data Assimilation</h3>
+          <p>Variational and ensemble methods for combining observations with model information.</p>
+          <div class="tags"><span>3D-Var</span><span>4D-Var</span><span>EDA</span><span>EnKF</span><span>B-matrix</span></div>
+        </article>
+        <article class="research-card reveal">
+          <span class="card-no">02</span>
+          <h3>Satellite Radiances</h3>
+          <p>Microwave and infrared radiance assimilation, emissivity, quality control and observation operators.</p>
+          <div class="tags"><span>IASI</span><span>AMSU-A</span><span>MTG-FCI</span><span>RTTOV</span></div>
+        </article>
+        <article class="research-card reveal">
+          <span class="card-no">03</span>
+          <h3>AI for Weather</h3>
+          <p>Generative and neural approaches for atmospheric modelling, downscaling and data assimilation.</p>
+          <div class="tags"><span>Diffusion</span><span>Score models</span><span>PyTorch</span><span>U-Net</span></div>
+        </article>
+        <article class="research-card reveal">
+          <span class="card-no">04</span>
+          <h3>Regional NWP</h3>
+          <p>High-resolution regional modelling and reanalysis across Nordic and Arctic domains.</p>
+          <div class="tags"><span>HARMONIE-AROME</span><span>CARRA-2</span><span>DEODE</span><span>HPC</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-kicker reveal">03 / Selected work</div>
+      <h2 class="section-title reveal">Research in production.</h2>
+      <div class="project-list">
+        <article class="project-card reveal">
+          <div class="project-meta"><span>01 / Regional reanalysis</span><span>Copernicus</span></div>
+          <h3>CARRA-2</h3>
+          <p>Development and evaluation of the second-generation Copernicus Arctic Regional Reanalysis, including data assimilation, ensemble-based background errors and satellite observations at kilometre-scale resolution.</p>
+          <div class="tags"><span>Arctic</span><span>3D-Var</span><span>EDA</span><span>HARMONIE-AROME</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-meta"><span>02 / Destination Earth</span><span>DEODE</span></div>
+          <h3>Observation data acquisition & handling</h3>
+          <p>Leading work on observation ingestion and handling for DEODE Phase 3, including regional observations, monitoring, crowdsourced weather data and data-access workflows.</p>
+          <div class="tags"><span>Observations</span><span>NRT</span><span>Monitoring</span><span>European NWP</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-meta"><span>03 / Generative AI</span><span>Research</span></div>
+          <h3>Score-based data assimilation</h3>
+          <p>Exploring diffusion and score-based generative models for probabilistic atmospheric data assimilation, including observation conditioning and learned observation operators.</p>
+          <div class="tags"><span>Diffusion</span><span>SDE</span><span>Langevin dynamics</span><span>PyTorch</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-meta"><span>04 / AI forecasting</span><span>HPC</span></div>
+          <h3>WeatherGenerator</h3>
+          <p>Training and evaluating large AI weather models with ERA5 and CERRA data on European HPC systems, with emphasis on regional forecasting, evaluation and satellite-data integration.</p>
+          <div class="tags"><span>ERA5</span><span>CERRA</span><span>JUPITER</span><span>ATOS</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-meta"><span>05 / Satellite DA</span><span>Microwave</span></div>
+          <h3>Land emissivity for AMSU-A</h3>
+          <p>Evaluating land-surface emissivity formulations for microwave radiance simulation over northern latitudes, with emphasis on seasonal behaviour, snow-covered surfaces and assimilation readiness.</p>
+          <div class="tags"><span>AMSU-A</span><span>RTTOV</span><span>Emissivity</span><span>MetCoOp</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="section-kicker reveal">04 / Publications</div>
+      <h2 class="section-title reveal">Selected research output.</h2>
+      <div class="publication-list">
+        <article class="publication reveal"><div class="pub-year">2026</div><div><h3>Improving Land Surface Emissivity for Better Simulation of Microwave Radiances over Northern Latitudes</h3><p>Swapan Mallick, Stéphanie Guedj, Magnus Lindskog · <em>Remote Sensing</em>, 18, 2819</p><a class="pub-link" href="https://doi.org/10.3390/rs18162819" target="_blank" rel="noreferrer">DOI ↗</a></div></article>
+        <article class="publication reveal"><div class="pub-year">2026</div><div><h3>Copernicus pan-Arctic Regional Reanalysis (CARRA2): Uncertainty estimation method</h3><p>Swapan Mallick, J. Bojarova, H. Schyberg, P. Dahlgren, E. Støylen, X. Yang, K. Tølløse · ECMWF report</p></div></article>
+        <article class="publication reveal"><div class="pub-year">2022</div><div><h3>Impact of Adaptively Thinned GOES-16 Cloud Water Path in an Ensemble Data Assimilation System</h3><p>Swapan Mallick · <em>Meteorology</em>, 1(4), 513–530</p><a class="pub-link" href="https://doi.org/10.3390/meteorology1040032" target="_blank" rel="noreferrer">DOI ↗</a></div></article>
+        <article class="publication reveal"><div class="pub-year">2022</div><div><h3>Impact of Adaptively Thinned GOES-16 All-sky Radiances in an Ensemble Kalman Filter based WoFS</h3><p>Swapan Mallick, Thomas A. Jones · <em>Atmospheric Research</em></p><a class="pub-link" href="https://doi.org/10.1016/j.atmosres.2022.106304" target="_blank" rel="noreferrer">DOI ↗</a></div></article>
+        <article class="publication reveal"><div class="pub-year">2020</div><div><h3>Assimilation of GOES-16 Satellite derived Winds into the Warn-on-Forecast System</h3><p>Swapan Mallick, Thomas A. Jones · <em>Atmospheric Research</em>, 245</p><a class="pub-link" href="https://doi.org/10.1016/j.atmosres.2020.105131" target="_blank" rel="noreferrer">DOI ↗</a></div></article>
+        <article class="publication reveal"><div class="pub-year">2011</div><div><h3>Objective Debiasing for Improved Forecasting of Tropical Cyclone Intensity with a Global Circulation Model</h3><p>Prashant Goswami, Swapan Mallick, K. C. Gouda · <em>Monthly Weather Review</em>, 139, 2471–2487</p><a class="pub-link" href="https://doi.org/10.1175/2011MWR3600.1" target="_blank" rel="noreferrer">DOI ↗</a></div></article>
+      </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="section-kicker reveal">05 / Experience</div>
+      <h2 class="section-title reveal">Research across operational and academic environments.</h2>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-date">2023 — Present</div><div><h3>Senior Research Scientist · SMHI, Sweden</h3><p>Data assimilation and observation processing within ACCORD/HARMONIE-AROME, with major contributions to CARRA-2 and Destination Earth DEODE.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2022 — 2023</div><div><h3>Research Scientist · CMCC, Italy</h3><p>Satellite ensemble data assimilation using the DART-CAM system in atmospheric data assimilation research.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2017 — 2022</div><div><h3>Postdoctoral Research Associate · NOAA-NSSL / CIWRO, USA</h3><p>GOES-R data analysis and assimilation in the Warn-on-Forecast System using WRF and GSI-EnKF, including radiances, cloud properties, AMVs and lightning data.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2016 — 2017</div><div><h3>Postdoctoral Research Associate · Kyungpook National University, South Korea</h3><p>Convective-scale variational data assimilation with radar, satellite and conventional observations using high-resolution KMA UM and WRF systems.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2012 — 2016</div><div><h3>Project Scientist · NCMRWF, India</h3><p>Numerical weather prediction, Indian Monsoon Data Assimilation and Analysis, UK Met Office Unified Model, 4D-Var, satellite and conventional observation processing.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2005 — 2012</div><div><h3>Research Fellow · CSIR C-MMACS, India</h3><p>NWP, 3D/4D-Var, tropical cyclone prediction, model bias correction and station-scale forecasting.</p></div></article>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <div class="section-kicker reveal">06 / Education</div>
+      <h2 class="section-title reveal">Academic background.</h2>
+      <div class="education-grid reveal">
+        <div><span>2007–2013</span><h3>Ph.D. in Physics</h3><p>Data Assimilation & Numerical Weather Prediction · Mangalore University / CSIR C-MMACS</p></div>
+        <div><span>2000–2002</span><h3>M.Sc. in Applied Mathematics</h3><p>Gauhati University</p></div>
+        <div><span>1997–2000</span><h3>B.Sc. in Mathematics</h3><p>Assam University</p></div>
+      </div>
+    </section>
+    <section class="section" id="tools">
+      <div class="section-kicker reveal">07 / Technical stack</div>
+      <h2 class="section-title reveal">From observations to HPC.</h2>
+      <div class="stack-grid reveal">
+        <div><h3>Scientific</h3><p>Python · FORTRAN · SQL · Unix shell · Git/GitHub · NetCDF · Zarr · HDF5 · GRIB · BUFR</p></div>
+        <div><h3>NWP & DA</h3><p>HARMONIE-AROME · GSI-EnKF · DART · JEDI · WRF · UK Met Office Unified Model</p></div>
+        <div><h3>Satellite</h3><p>RTTOV · CRTM · IASI · AIRS · CrIS · GOES-R · AMSU-A</p></div>
+        <div><h3>AI / ML</h3><p>PyTorch · TensorFlow · CNN · Diffusion Models · Deep Learning</p></div>
+        <div><h3>HPC</h3><p>ECMWF ATOS · JUPITER · Dardel · Slurm · distributed GPU training</p></div>
+        <div><h3>Visualisation</h3><p>Matplotlib · Cartopy · scientific maps · diagnostics</p></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div>
+        <div class="section-kicker reveal">08 / Contact</div>
+        <h2 class="contact-title reveal">Let’s talk about weather, observations or AI.</h2>
+      </div>
+      <div class="contact-panel reveal">
+        <p>For research collaboration, scientific discussions, project work or conference activities:</p>
+        <a class="contact-link" href="mailto:swapan.mallick@smhi.se">swapan.mallick@smhi.se ↗</a>
+        <div class="socials">
+          <a href="https://orcid.org/0000-0002-6851-5022" target="_blank" rel="noreferrer">ORCID ↗</a>
+          <a href="https://github.com/swapanmallicksmhi" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/dr-swapan-mallick-90865784/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Swapan Mallick</span>
+    <span>Research Scientist · Sweden</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
